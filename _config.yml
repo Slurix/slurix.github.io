@@ -1,6 +1,4 @@
----
-layout: post
-title: "Slurix Blog"
-date: 2025-05-08
-categories: [blog]
----
+title: Slurix Blog
+description: Tech, thoughts, and experiments
+author: Slurix
+theme: minima
