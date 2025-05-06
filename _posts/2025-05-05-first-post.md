@@ -4,7 +4,6 @@ title: "First Post"
 date: 2025-05-05
 ---
 
-Welcome to my first blog post!  
-This is where I begin my journey writing about tech, life, or whatever comes to mind.
+This is my very first post on this new blog!
 
-Stay tuned for more posts!
+I’ll write about tech, development, and whatever’s on my mind.
