@@ -1,12 +1,6 @@
 ---
 layout: home
-title: "Welcome to My Blog"
+title: Welcome
 ---
 
-# Welcome to My Blog
-
-Here are my latest posts:
-
-- [My First Blog Post](2025/05/05/first-post/)
-- [My Second Blog Post](2025/05/06/second-post/)
-- [My Third Blog Post](2025/05/08/my-new-post/)
+Welcome to my blog! You'll find my latest posts below.
