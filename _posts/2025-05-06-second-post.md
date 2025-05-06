@@ -1,11 +1,9 @@
 ---
 layout: post
-title: "Second Post"
+title: "Second Post - GitHub Pages Setup"
 date: 2025-05-06
 ---
 
-Here’s my second blog post.  
+Today I set up my GitHub Pages site using Jekyll and the Minima theme.
 
-Today I learned more about GitHub Pages and Jekyll. It's actually pretty neat once you get past the 404s.
-
-Hope you're enjoying the content so far!
+So far, so good!
