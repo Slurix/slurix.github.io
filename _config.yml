@@ -1,3 +1,6 @@
-title: Slurix Blog
-description: A GitHub Pages blog
-theme: minima
+---
+layout: post
+title: "Slurix Blog"
+date: 2025-05-08
+categories: [blog]
+---
