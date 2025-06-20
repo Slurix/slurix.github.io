@@ -1,4 +1,10 @@
-<!DOCTYPE html>
+<div class="instructions">
+                <h4>How to Add New Posts:</h4>
+                <p>1. Go to <strong>github.com/Slurix/slurix.github.io</strong></p>
+                <p>2. Click on <strong>index.html</strong> → pencil icon to edit</p>
+                <p>3. Find the <code>posts = [</code> section and add your new post</p>
+                <p>4. Commit changes to publish</p>
+            </div><!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -299,6 +305,53 @@
             color: #666;
         }
 
+        .instructions {
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 20px;
+            margin: 20px 0;
+            border-left: 4px solid #667eea;
+        }
+
+        .instructions h4 {
+            color: #667eea;
+            margin-bottom: 10px;
+        }
+
+        .social-links {
+            margin: 20px 0;
+        }
+
+        .social-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 10px 20px;
+            border: 2px solid #667eea;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+            background: rgba(102, 126, 234, 0.1);
+        }
+
+        .social-link:hover {
+            background: #667eea;
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
+        }
+
+        .social-link svg {
+            transition: transform 0.3s ease;
+        }
+
+        .social-link:hover svg {
+            transform: scale(1.1);
+        }
+
         @media (max-width: 768px) {
             .container {
                 padding: 10px;
@@ -336,6 +389,14 @@
         <header>
             <h1>Weekly Thoughts</h1>
             <p class="subtitle">My personal journey through ideas, reflections, and discoveries</p>
+            <div class="social-links">
+                <a href="https://x.com/slurix_xyz" target="_blank" class="social-link">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                    </svg>
+                    Follow @slurix_xyz
+                </a>
+            </div>
             <div class="blog-stats">
                 <div class="stat">
                     <div class="stat-number" id="post-count">0</div>
@@ -350,7 +411,7 @@
                     <div class="stat-label">Weeks</div>
                 </div>
             </div>
-            <button class="add-post-btn" onclick="openModal()">✨ Add New Thought</button>
+
         </header>
 
         <div class="posts-container" id="posts-container">
@@ -503,10 +564,7 @@
                             ${post.tags.map(tag => `<span class="tag">${tag}</span>`).join('')}
                         </div>
                     ` : ''}
-                    <div class="post-actions">
-                        <button class="action-btn" onclick="openModal(${index})">Edit</button>
-                        <button class="action-btn delete-btn" onclick="deletePost(${index})">Delete</button>
-                    </div>
+
                 </article>
             `).join('');
         }
