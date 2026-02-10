@@ -423,6 +423,23 @@ section {
     line-height: 1.6;
 }
 
+.credential-item ul {
+    list-style-type: disc;
+    margin: 0;
+    padding-left: 1.5rem;
+    color: var(--color-text-secondary);
+}
+
+.credential-item li {
+    font-size: 0.95rem;
+    line-height: 1.8;
+    margin-bottom: 0.3rem;
+}
+
+.credential-item li:last-child {
+    margin-bottom: 0;
+}
+
 .about-image {
     position: relative;
 }
