@@ -134,31 +134,8 @@ document.addEventListener('DOMContentLoaded', function() {
     // ============================================
     // Contact Form Handling
     // ============================================
-    const contactForm = document.getElementById('contactForm');
-    
-    if (contactForm) {
-        contactForm.addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            // Get form data
-            const name = document.getElementById('name').value;
-            const email = document.getElementById('email').value;
-            const message = document.getElementById('message').value;
-            
-            // Here you would typically send the data to a server
-            // For now, we'll just show an alert
-            alert(`Thank you for your message, ${name}! I'll get back to you soon at ${email}.`);
-            
-            // Reset form
-            contactForm.reset();
-            
-            // In a real implementation, you might use:
-            // - FormSpree (https://formspree.io/)
-            // - EmailJS (https://www.emailjs.com/)
-            // - Netlify Forms (if hosting on Netlify)
-            // - Your own backend API
-        });
-    }
+    // Form submission is handled by FormSpree (https://formspree.io/f/mnjbjqvj)
+    // No custom JavaScript needed - FormSpree handles the form POST request
 
     // ============================================
     // Parallax Effect for Hero Section
