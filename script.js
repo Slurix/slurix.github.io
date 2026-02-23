@@ -138,9 +138,12 @@ document.addEventListener('DOMContentLoaded', function() {
     // No custom JavaScript needed - FormSpree handles the form POST request
 
     // ============================================
-    // Parallax Effect for Hero Section
+    // Parallax Effect for Hero Section (desktop only)
     // ============================================
     window.addEventListener('scroll', function() {
+        // Disable parallax on mobile to prevent content disappearing
+        if (window.innerWidth <= 768) return;
+
         const scrolled = window.pageYOffset;
         const heroContent = document.querySelector('.hero-content');
         
