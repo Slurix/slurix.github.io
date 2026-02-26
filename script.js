@@ -61,21 +61,25 @@ document.addEventListener('DOMContentLoaded', function() {
     // ============================================
     const skillBars = document.querySelectorAll('.skill-fill');
     const skillsSection = document.querySelector('.skills-section');
+    let skillsAnimated = false;
 
     const skillsObserver = new IntersectionObserver(function(entries) {
         entries.forEach(entry => {
-            if (entry.isIntersecting) {
+            if (entry.isIntersecting && !skillsAnimated) {
+                skillsAnimated = true;
                 skillBars.forEach((bar, index) => {
                     const percent = bar.getAttribute('data-percent');
-                    bar.style.setProperty('--fill-width', percent + '%');
+                    // Reset to 0, force reflow, then set target so transition fires
+                    bar.style.width = '0%';
+                    void bar.offsetWidth;
                     setTimeout(() => {
-                        bar.classList.add('animate');
-                    }, index * 100);
+                        bar.style.width = percent + '%';
+                    }, index * 150);
                 });
                 skillsObserver.unobserve(entry.target);
             }
         });
-    }, { threshold: 0.5 });
+    }, { threshold: 0.1 });
 
     if (skillsSection) {
         skillsObserver.observe(skillsSection);

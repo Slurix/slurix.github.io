@@ -760,9 +760,7 @@ section {
     transition: width 1.5s ease;
 }
 
-.skill-fill.animate {
-    width: var(--fill-width);
-}
+/* width is set directly via inline style by JS */
 
 /* ============================================
    Contact Section
