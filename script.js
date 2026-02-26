@@ -67,8 +67,8 @@ document.addEventListener('DOMContentLoaded', function() {
             if (entry.isIntersecting) {
                 skillBars.forEach((bar, index) => {
                     const percent = bar.getAttribute('data-percent');
+                    bar.style.setProperty('--fill-width', percent + '%');
                     setTimeout(() => {
-                        bar.style.width = percent + '%';
                         bar.classList.add('animate');
                     }, index * 100);
                 });
