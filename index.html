@@ -2,412 +2,522 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nathaniel Normandeau | Advanced Process Control Specialist</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Nathaniel Normandeau — Advanced Process Control</title>
+    <meta name="description" content="Chemical Engineer specializing in advanced process control, MPC implementation, and custom control loop monitoring software for pulp & paper.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=IBM+Plex+Mono:wght@300;400;600&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Animated gradient background -->
-    <div class="gradient-bg"></div>
-    
-    <!-- Navigation -->
-    <nav class="nav">
-        <div class="nav-container">
-            <div class="logo">CONTROL/SYSTEMS</div>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#expertise">Expertise</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-    </nav>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-content">
-            <div class="hero-label">Nathaniel Normandeau</div>
-            <h1 class="hero-title">
-                <span class="line">Advanced Process</span>
-                <span class="line">Control Specialist</span>
-            </h1>
-            <p class="hero-subtitle">Delivering MPC solutions across bleach plants, O₂ delignification, power boilers, and lime kilns. Leading development of control loop monitoring and optimization software.</p>
-            <div class="hero-cta">
-                <a href="#projects" class="btn btn-primary">View Projects</a>
-                <a href="#contact" class="btn btn-secondary">Get in Touch</a>
-            </div>
+<!-- NAV -->
+<nav class="nav" id="nav">
+    <div class="nav-container">
+        <a href="#top" class="brand-mark" aria-label="Nathaniel Normandeau — home">
+            <span class="brand-glyph" aria-hidden="true"></span>
+            <span class="brand-name">Nathaniel Normandeau</span>
+        </a>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#demos">Live Demos</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#expertise">Expertise</a></li>
+            <li><a href="#contact" class="nav-cta">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+<main id="top">
+
+<!-- HERO -->
+<section class="hero">
+    <div class="hero-inner">
+        <div class="hero-eyebrow">
+            <span class="eyebrow-dot"></span>
+            <span>Advanced Process Control · Pulp &amp; Paper</span>
         </div>
+
+        <h1 class="hero-title">
+            I build control systems<br>
+            &amp; the software to <em>tune</em> them.
+        </h1>
+
+        <p class="hero-lead">
+            Chemical Engineer delivering MPC solutions across bleach plants, O₂ delignification, power boilers, and lime kilns — and shipping the custom web tools that keep those loops running well afterward.
+        </p>
+
+        <div class="hero-cta">
+            <a href="#demos" class="btn btn-primary">
+                <span>View Live Demos</span>
+                <span class="arrow" aria-hidden="true">→</span>
+            </a>
+            <a href="#contact" class="btn btn-ghost">Get in touch</a>
+        </div>
+
         <div class="hero-stats">
-            <div class="stat-item">
-                <div class="stat-number">5+</div>
-                <div class="stat-label">MPC Projects</div>
+            <div class="hero-stat">
+                <div class="hero-stat-num">5<span class="hero-stat-suffix">+</span></div>
+                <div class="hero-stat-label">MPC Projects</div>
             </div>
-            <div class="stat-item">
-                <div class="stat-number">4</div>
-                <div class="stat-label">Process Areas</div>
+            <div class="hero-stat">
+                <div class="hero-stat-num">4</div>
+                <div class="hero-stat-label">Process Areas</div>
             </div>
-            <div class="stat-item">
-                <div class="stat-number">31</div>
-                <div class="stat-label">Software Solutions Deployed</div>
+            <div class="hero-stat">
+                <div class="hero-stat-num">31</div>
+                <div class="hero-stat-label">Software Deployments</div>
             </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-number">01</span>
-                <h2>About Me</h2>
-            </div>
-            <div class="about-content">
-                <div class="about-text">
-                    <p class="lead">I'm a Chemical Engineer with a B.Sc. from the University of Saskatchewan, specializing in advanced process control systems for the pulp and paper industry.</p>
-                    <p>My expertise spans multiple critical process areas including bleach plant optimization, oxygen delignification systems, power boilers, and lime kilns. I've successfully implemented advanced process control solutions across these operations, delivering measurable improvements in efficiency, quality, and operational stability.</p>
-                    <p>Beyond traditional MPC implementation, I lead the development of innovative software solutions for control loop monitoring and tuning. This includes building Mode tracking software to monitor controller operational states, identify when loops are in manual vs automatic, and flag automation issues. I also develop custom web reports and APIs to deliver real-time performance insights to operations teams.</p>
-                    <div class="credentials">
-                        <div class="credential-item">
-                            <strong>Education</strong>
-                            <ul>
-                                <li>B.Sc. Chemical Engineering - University of Saskatchewan</li>
-                                <li>Associate of Science - Clark College</li>
-                                <li>ISA Boiler Control Systems Engineering Certified</li>
-                            </ul>
-                        </div>
-                        <div class="credential-item">
-                            <strong>Specialization</strong>
-                            <ul>
-                                <li>Advanced Process Control</li>
-                                <li>Control Loop Optimization & Tuning</li>
-                                <li>Analytics & Performance Monitoring</li>
-                                <li>System Integration & Deployment</li>
-                                <li>Project Management</li>
-                            </ul>
-                        </div>
-                        <div class="credential-item">
-                            <strong>Software Expertise</strong>
-                            <ul>
-                                <li>Historians</li>
-                                <li>OPC UA / OPC DA</li>
-                                <li>SQL</li>
-                                <li>VB</li>
-                                <li>Python</li>
-                                <li>Windows Server Environment</li>
-                                <li>Linux</li>
-                                <li>Docker</li>
-                            </ul>
-                        </div>
-                        <div class="credential-item">
-                            <strong>Achievements</strong>
-                            <ul>
-                                <li>Best Technical Presentation Award - PACWEST 2025</li>
-                                <li>Control Engineering Magazine - Integrated Loop Monitoring and Tuning for Industrial Process Control</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="about-image">
-                    <img src="profile.jpg" alt="Nathaniel Normandeau - Chemical Engineer">
-                </div>
+            <div class="hero-stat">
+                <div class="hero-stat-num">2</div>
+                <div class="hero-stat-label">Live Demos Below</div>
             </div>
         </div>
-    </section>
+    </div>
+    <div class="hero-bg" aria-hidden="true"></div>
+</section>
 
-    <!-- Expertise Section -->
-    <section id="expertise" class="expertise">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-number">02</span>
-                <h2>Technical Expertise</h2>
+<!-- LIVE DEMOS — proof-of-work first -->
+<section id="demos" class="demos">
+    <div class="container">
+        <header class="section-header">
+            <span class="section-num">01</span>
+            <h2>Live Demos</h2>
+            <p class="section-sub">Working tools built for real mill control environments. Click to launch.</p>
+        </header>
+
+        <div class="demos-grid">
+            <a href="https://slurix.github.io/mode-tracking/" target="_blank" rel="noopener" class="demo-card">
+                <div class="demo-visual demo-visual-mode" aria-hidden="true">
+                    <svg viewBox="0 0 280 120" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
+                        <defs>
+                            <linearGradient id="gradMode" x1="0" y1="0" x2="0" y2="1">
+                                <stop offset="0%" stop-color="rgba(124,58,237,0.22)"/>
+                                <stop offset="100%" stop-color="rgba(124,58,237,0)"/>
+                            </linearGradient>
+                        </defs>
+                        <!-- horizontal mode bars -->
+                        <g>
+                            <rect x="10" y="20" width="180" height="6" rx="2" fill="rgba(255,255,255,0.08)"/>
+                            <rect x="10" y="20" width="130" height="6" rx="2" fill="#0d9488"/>
+                            <rect x="10" y="38" width="180" height="6" rx="2" fill="rgba(255,255,255,0.08)"/>
+                            <rect x="10" y="38" width="90" height="6" rx="2" fill="#dc2626"/>
+                            <rect x="10" y="56" width="180" height="6" rx="2" fill="rgba(255,255,255,0.08)"/>
+                            <rect x="10" y="56" width="158" height="6" rx="2" fill="#2563eb"/>
+                            <rect x="10" y="74" width="180" height="6" rx="2" fill="rgba(255,255,255,0.08)"/>
+                            <rect x="10" y="74" width="64" height="6" rx="2" fill="#7c3aed"/>
+                            <rect x="10" y="92" width="180" height="6" rx="2" fill="rgba(255,255,255,0.08)"/>
+                            <rect x="10" y="92" width="110" height="6" rx="2" fill="#ea580c"/>
+                        </g>
+                        <!-- mini trend card -->
+                        <g transform="translate(200,10)">
+                            <rect width="70" height="100" rx="6" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.09)"/>
+                            <path d="M6 70 L14 62 L22 58 L30 50 L38 54 L46 40 L54 32 L62 22" stroke="#4f6ef7" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+                            <path d="M6 70 L14 62 L22 58 L30 50 L38 54 L46 40 L54 32 L62 22 L62 90 L6 90 Z" fill="url(#gradMode)"/>
+                        </g>
+                    </svg>
+                </div>
+                <div class="demo-body">
+                    <div class="demo-meta">
+                        <span class="demo-tag">Live Demo</span>
+                        <span class="demo-arrow">↗</span>
+                    </div>
+                    <h3>Mode Tracking Dashboard</h3>
+                    <p>Real-time fleet view of controller modes — Program, Auto, Manual, Cascade, Remote — with severity scoring, area filters, and a 24h trend that responds to your filters. Click a row to drill into any controller's 8-hour mode history.</p>
+                    <div class="demo-chips">
+                        <span class="chip">Chart.js</span>
+                        <span class="chip">Responsive</span>
+                        <span class="chip">iPhone-ready</span>
+                    </div>
+                </div>
+            </a>
+
+            <a href="https://slurix.github.io/actuator-health/" target="_blank" rel="noopener" class="demo-card">
+                <div class="demo-visual demo-visual-act" aria-hidden="true">
+                    <svg viewBox="0 0 280 120" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
+                        <defs>
+                            <linearGradient id="gradAct" x1="0" y1="0" x2="0" y2="1">
+                                <stop offset="0%" stop-color="rgba(220,38,38,0.22)"/>
+                                <stop offset="100%" stop-color="rgba(220,38,38,0)"/>
+                            </linearGradient>
+                        </defs>
+                        <!-- bar fleet -->
+                        <g transform="translate(10,90)">
+                            <rect x="0"   y="-55" width="16" height="55" rx="2" fill="#dc2626"/>
+                            <rect x="22"  y="-50" width="16" height="50" rx="2" fill="#dc2626"/>
+                            <rect x="44"  y="-46" width="16" height="46" rx="2" fill="#dc2626"/>
+                            <rect x="66"  y="-38" width="16" height="38" rx="2" fill="#d97706"/>
+                            <rect x="88"  y="-35" width="16" height="35" rx="2" fill="#d97706"/>
+                            <rect x="110" y="-33" width="16" height="33" rx="2" fill="#d97706"/>
+                            <rect x="132" y="-30" width="16" height="30" rx="2" fill="#d97706"/>
+                            <rect x="154" y="-26" width="16" height="26" rx="2" fill="#059669"/>
+                            <!-- thresholds -->
+                            <line x1="-4" y1="-32" x2="176" y2="-32" stroke="#d97706" stroke-width="1" stroke-dasharray="3 3" opacity="0.7"/>
+                            <line x1="-4" y1="-46" x2="176" y2="-46" stroke="#dc2626" stroke-width="1" stroke-dasharray="3 3" opacity="0.7"/>
+                        </g>
+                        <!-- mini trend card -->
+                        <g transform="translate(200,10)">
+                            <rect width="70" height="100" rx="6" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.09)"/>
+                            <path d="M6 78 L14 74 L22 70 L30 66 L38 54 L46 42 L54 28 L62 18" stroke="#dc2626" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+                            <path d="M6 78 L14 74 L22 70 L30 66 L38 54 L46 42 L54 28 L62 18 L62 90 L6 90 Z" fill="url(#gradAct)"/>
+                        </g>
+                    </svg>
+                </div>
+                <div class="demo-body">
+                    <div class="demo-meta">
+                        <span class="demo-tag">Live Demo</span>
+                        <span class="demo-arrow">↗</span>
+                    </div>
+                    <h3>Actuator Health Monitoring</h3>
+                    <p>Fleet-wide valve diagnostics: stiction, reversals, and 30-day travel distance. Every row includes an inline 14-day sparkline — click through to per-actuator 90-day trends with maintenance context.</p>
+                    <div class="demo-chips">
+                        <span class="chip">Predictive</span>
+                        <span class="chip">Sticky Table</span>
+                        <span class="chip">Drill-in UX</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="projects">
+    <div class="container">
+        <header class="section-header">
+            <span class="section-num">02</span>
+            <h2>Projects</h2>
+            <p class="section-sub">MPC implementations, process control work, and custom software.</p>
+        </header>
+
+        <div class="filter-row" role="tablist" aria-label="Filter projects">
+            <button class="filter-chip is-active" data-filter="all" role="tab" aria-selected="true">All <span class="filter-count" data-count="all">8</span></button>
+            <button class="filter-chip" data-filter="software" role="tab" aria-selected="false">Software <span class="filter-count" data-count="software"></span></button>
+            <button class="filter-chip" data-filter="mpc" role="tab" aria-selected="false">MPC &amp; Control <span class="filter-count" data-count="mpc"></span></button>
+            <button class="filter-chip" data-filter="demo" role="tab" aria-selected="false">Has Live Demo <span class="filter-count" data-count="demo"></span></button>
+        </div>
+
+        <div class="projects-grid" id="projectsGrid">
+
+            <article class="project-card" data-cat="software demo">
+                <div class="project-head">
+                    <span class="project-num">01</span>
+                    <span class="project-pill demo-pill"><span class="pill-dot"></span>Live Demo</span>
+                </div>
+                <h3>Mode Tracking Software</h3>
+                <p>Tracks controller operational modes (Program, Auto, Manual, Cascade, Remote) across mill control systems. Alerts when critical loops fall out of preferred mode, helping maintain optimal automation levels and catching issues before they become deviations.</p>
+                <div class="tag-row">
+                    <span class="tag">Mode Monitoring</span>
+                    <span class="tag">Automation Tracking</span>
+                    <span class="tag">Alerting</span>
+                </div>
+                <a href="https://slurix.github.io/mode-tracking/" target="_blank" rel="noopener" class="project-link">
+                    Launch live demo <span aria-hidden="true">→</span>
+                </a>
+            </article>
+
+            <article class="project-card" data-cat="software demo">
+                <div class="project-head">
+                    <span class="project-num">02</span>
+                    <span class="project-pill demo-pill"><span class="pill-dot"></span>Live Demo</span>
+                </div>
+                <h3>Actuator Health Monitoring</h3>
+                <p>Fleet-wide valve and actuator health dashboard tracking stiction, reversal counts, and cumulative travel distance. Severity tiers and threshold bands catch degradation early; drill-in trends move maintenance from fleet view into a specific asset in one click.</p>
+                <div class="tag-row">
+                    <span class="tag">Valve Diagnostics</span>
+                    <span class="tag">Stiction Analysis</span>
+                    <span class="tag">Predictive Maintenance</span>
+                </div>
+                <a href="https://slurix.github.io/actuator-health/" target="_blank" rel="noopener" class="project-link">
+                    Launch live demo <span aria-hidden="true">→</span>
+                </a>
+            </article>
+
+            <article class="project-card" data-cat="software">
+                <div class="project-head">
+                    <span class="project-num">03</span>
+                </div>
+                <h3>Control Loop Monitoring &amp; Tuning</h3>
+                <p>Led end-to-end implementation of CONTROLsuite performance monitoring: system assessment, installation coordination, configuration, controller tuning analysis, and customer training. Worked cross-functionally with operations, engineering, and IT to reduce variability and deliver operational insights across multiple mills.</p>
+                <div class="tag-row">
+                    <span class="tag">Web Reports</span>
+                    <span class="tag">Custom APIs</span>
+                    <span class="tag">Control Theory</span>
+                </div>
+            </article>
+
+            <article class="project-card" data-cat="mpc">
+                <div class="project-head">
+                    <span class="project-num">04</span>
+                </div>
+                <h3>Bleach Plant MPC</h3>
+                <p>Advanced process control for multiple bleach plant stages, optimizing chemical dosing and brightness control across ECF sequences.</p>
+                <div class="tag-row">
+                    <span class="tag">MPC</span>
+                    <span class="tag">ClO₂ Control</span>
+                    <span class="tag">DCS Integration</span>
+                </div>
+            </article>
+
+            <article class="project-card" data-cat="mpc">
+                <div class="project-head">
+                    <span class="project-num">05</span>
+                </div>
+                <h3>O₂ Delignification Control</h3>
+                <p>Optimized oxygen delignification process control for improved kappa reduction and chemical efficiency.</p>
+                <div class="tag-row">
+                    <span class="tag">MPC</span>
+                    <span class="tag">Process Optimization</span>
+                    <span class="tag">Chemical Savings</span>
+                </div>
+            </article>
+
+            <article class="project-card" data-cat="mpc">
+                <div class="project-head">
+                    <span class="project-num">06</span>
+                </div>
+                <h3>Power Boiler Optimization</h3>
+                <p>Advanced control implementation for power boiler, improving steam generation stability and reducing emissions.</p>
+                <div class="tag-row">
+                    <span class="tag">MPC</span>
+                    <span class="tag">Energy Optimization</span>
+                    <span class="tag">Emissions</span>
+                </div>
+            </article>
+
+            <article class="project-card" data-cat="mpc">
+                <div class="project-head">
+                    <span class="project-num">07</span>
+                </div>
+                <h3>Lime Kiln Control System</h3>
+                <p>Process control improvements for lime kiln operations, enhancing lime quality and fuel efficiency.</p>
+                <div class="tag-row">
+                    <span class="tag">PID Tuning</span>
+                    <span class="tag">Temperature Control</span>
+                    <span class="tag">Quality Control</span>
+                </div>
+            </article>
+
+            <article class="project-card" data-cat="software">
+                <div class="project-head">
+                    <span class="project-num">08</span>
+                </div>
+                <h3>Mill-Wide Performance Dashboard</h3>
+                <p>Web-based reporting system with custom API integration for MPC performance metrics, loop health indicators, and operational KPIs. Real-time data accessible across the organization.</p>
+                <div class="tag-row">
+                    <span class="tag">Web Reports</span>
+                    <span class="tag">Custom APIs</span>
+                    <span class="tag">Data Visualization</span>
+                </div>
+            </article>
+        </div>
+
+        <div class="no-match" id="noMatch" hidden>No projects match this filter.</div>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="about">
+    <div class="container">
+        <header class="section-header">
+            <span class="section-num">03</span>
+            <h2>About</h2>
+        </header>
+
+        <div class="about-grid">
+            <div class="about-photo-wrap">
+                <img src="profile.jpg" alt="Nathaniel Normandeau" class="about-photo">
+                <div class="photo-frame" aria-hidden="true"></div>
             </div>
-            <div class="expertise-grid">
-                <div class="expertise-card">
-                    <div class="card-icon">🎛️</div>
-                    <h3>Process Control</h3>
-                    <ul>
-                        <li>Advanced Process Control MPC</li>
-                        <li>Control Loop Monitoring & Tuning</li>
-                        <li>PID Controller Optimization</li>
-                        <li>DCS Integration (ABB, Honeywell, Emerson)</li>
-                        <li>Performance Assessment & KPIs</li>
-                    </ul>
-                </div>
-                <div class="expertise-card">
-                    <div class="card-icon">💻</div>
-                    <h3>Software Development</h3>
-                    <ul>
-                        <li>Web-Based Reporting Solutions</li>
-                        <li>Custom API Development</li>
-                        <li>Real-Time Dashboard Creation</li>
-                        <li>SQL & Data Analytics</li>
-                        <li>Control Loop Analysis Tools</li>
-                    </ul>
-                </div>
-                <div class="expertise-card">
-                    <div class="card-icon">🏭</div>
-                    <h3>Pulp & Paper Processes</h3>
-                    <ul>
-                        <li>Bleach Plant Operations</li>
-                        <li>Oxygen Delignification Systems</li>
-                        <li>Power Boiler Operations</li>
-                        <li>Lime Kiln Process Control</li>
-                    </ul>
-                </div>
-                <div class="expertise-card">
-                    <div class="card-icon">📊</div>
-                    <h3>Project Management & Analytics</h3>
-                    <ul>
-                        <li>MPC Project Leadership</li>
-                        <li>Control Loop Performance Monitoring</li>
-                        <li>Controller Tuning Optimization</li>
-                        <li>Process Data Analysis</li>
-                        <li>Statistical Process Control</li>
-                    </ul>
+
+            <div class="about-text">
+                <p class="lead">I'm a Chemical Engineer (B.Sc., University of Saskatchewan) specializing in advanced process control systems for pulp &amp; paper.</p>
+                <p>My expertise spans bleach plant optimization, oxygen delignification, power boilers, and lime kilns — delivering measurable improvements in efficiency, quality, and operational stability.</p>
+                <p>Beyond MPC implementation, I lead development of web tools for control loop monitoring and tuning: mode tracking, actuator health, custom reports and APIs that deliver real-time performance insights to operations teams.</p>
+
+                <div class="credentials">
+                    <div class="cred">
+                        <h4>Education</h4>
+                        <ul>
+                            <li>B.Sc. Chemical Engineering — U. of Saskatchewan</li>
+                            <li>Associate of Science — Clark College</li>
+                            <li>ISA Boiler Control Systems Engineering Certified</li>
+                        </ul>
+                    </div>
+                    <div class="cred">
+                        <h4>Recognition</h4>
+                        <ul>
+                            <li>Best Technical Presentation — PACWEST 2025</li>
+                            <li>Control Engineering Magazine — Integrated Loop Monitoring &amp; Tuning for Industrial Process Control</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-number">03</span>
-                <h2>Featured Projects</h2>
+<!-- EXPERTISE -->
+<section id="expertise" class="expertise">
+    <div class="container">
+        <header class="section-header">
+            <span class="section-num">04</span>
+            <h2>Expertise</h2>
+            <p class="section-sub">Where I work and what I use.</p>
+        </header>
+
+        <div class="expertise-grid">
+            <div class="ex-card">
+                <div class="ex-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                        <circle cx="12" cy="12" r="8"/>
+                        <circle cx="12" cy="12" r="3"/>
+                        <path d="M12 4v3M12 17v3M4 12h3M17 12h3"/>
+                    </svg>
+                </div>
+                <h3>Process Control</h3>
+                <ul>
+                    <li>Advanced Process Control (MPC)</li>
+                    <li>Control Loop Monitoring &amp; Tuning</li>
+                    <li>PID Controller Optimization</li>
+                    <li>DCS Integration — ABB, Honeywell, Emerson</li>
+                    <li>Performance Assessment &amp; KPIs</li>
+                </ul>
             </div>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-number">01</div>
-                    <div class="project-content">
-                        <h3>Control Loop Monitoring & Tuning Software</h3>
-                        <p>Led end-to-end implementation of CONTROLsuite performance monitoring projects, including system assessment, installation coordination, configuration, controller tuning analysis, and customer training. Worked cross-functionally with operations, engineering, and IT teams to improve control loop performance, reduce process variability, and deliver measurable operational insights across multiple mill environments.</p>
-                        <div class="project-tags">
-                            <span class="tag">Web Reports</span>
-                            <span class="tag">Custom APIs</span>
-                            <span class="tag">Control Theory</span>
-                            <span class="tag">Mode Tracking</span>
-                        </div>
-                    </div>
-                </div>
 
-                <div class="project-card">
-                    <div class="project-number">02</div>
-                    <div class="project-content">
-                        <h3>Bleach Plant MPC Implementation</h3>
-                        <p>Advanced process control for multiple bleach plant stages, optimizing chemical dosing and brightness control across ECF sequences.</p>
-                        <div class="project-tags">
-                            <span class="tag">MPC</span>
-                            <span class="tag">ClO₂ Control</span>
-                            <span class="tag">DCS Integration</span>
-                            <span class="tag">Project Management</span>
-                        </div>
-                    </div>
+            <div class="ex-card">
+                <div class="ex-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                        <polyline points="4,18 10,12 14,16 20,8"/>
+                        <path d="M14 8h6v6"/>
+                    </svg>
                 </div>
+                <h3>Software Development</h3>
+                <ul>
+                    <li>Web-Based Reporting Solutions</li>
+                    <li>Custom API Development</li>
+                    <li>Real-Time Dashboard Creation</li>
+                    <li>SQL &amp; Data Analytics</li>
+                    <li>Control Loop Analysis Tools</li>
+                </ul>
+            </div>
 
-                <div class="project-card">
-                    <div class="project-number">03</div>
-                    <div class="project-content">
-                        <h3>O₂ Delignification Control</h3>
-                        <p>Optimized oxygen delignification process control for improved kappa reduction and chemical efficiency.</p>
-                        <div class="project-tags">
-                            <span class="tag">MPC</span>
-                            <span class="tag">Process Optimization</span>
-                            <span class="tag">Chemical Savings</span>
-                        </div>
-                    </div>
+            <div class="ex-card">
+                <div class="ex-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                        <path d="M4 20V8l6-4 6 4v12"/>
+                        <path d="M4 20h16"/>
+                        <path d="M16 20V12l4-2v10"/>
+                    </svg>
                 </div>
+                <h3>Pulp &amp; Paper Processes</h3>
+                <ul>
+                    <li>Bleach Plant Operations</li>
+                    <li>Oxygen Delignification Systems</li>
+                    <li>Power Boiler Operations</li>
+                    <li>Lime Kiln Process Control</li>
+                </ul>
+            </div>
 
-                <div class="project-card">
-                    <div class="project-number">04</div>
-                    <div class="project-content">
-                        <h3>Power Boiler Optimization</h3>
-                        <p>Advanced control implementation for power boiler, improving steam generation stability and reducing emissions.</p>
-                        <div class="project-tags">
-                            <span class="tag">MPC</span>
-                            <span class="tag">Energy Optimization</span>
-                            <span class="tag">Emissions Control</span>
-                        </div>
-                    </div>
+            <div class="ex-card">
+                <div class="ex-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                        <path d="M3 3h18v18H3z"/>
+                        <path d="M3 9h18M9 3v18"/>
+                    </svg>
                 </div>
-
-                <div class="project-card">
-                    <div class="project-number">05</div>
-                    <div class="project-content">
-                        <h3>Lime Kiln Control System</h3>
-                        <p>Process control improvements for lime kiln operations, enhancing lime quality and fuel efficiency.</p>
-                        <div class="project-tags">
-                            <span class="tag">PID Tuning</span>
-                            <span class="tag">Temperature Control</span>
-                            <span class="tag">Quality Control</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-number">06</div>
-                    <div class="project-content">
-                        <h3>Mode Tracking Software</h3>
-                        <p>Built software to track controller operational modes (manual/automatic) across mill control systems. Provides alerts when critical loops fall out of automatic mode, helping maintain optimal automation levels.</p>
-                        <div class="project-tags">
-                            <span class="tag">Mode Monitoring</span>
-                            <span class="tag">Automation Tracking</span>
-                            <span class="tag">Alerting System</span>
-                        </div>
-                        <a href="https://slurix.github.io/mode-tracking/" class="project-link" target="_blank" rel="noopener">
-                            Launch Live Demo <span aria-hidden="true">→</span>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-number">07</div>
-                    <div class="project-content">
-                        <h3>Mill-Wide Performance Dashboard</h3>
-                        <p>Web-based reporting system with custom API integration for MPC performance metrics, loop health indicators, and operational KPIs. Real-time data visualization accessible across the organization.</p>
-                        <div class="project-tags">
-                            <span class="tag">Web Reports</span>
-                            <span class="tag">Custom APIs</span>
-                            <span class="tag">Data Visualization</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-number">08</div>
-                    <div class="project-content">
-                        <h3>Actuator Health Monitoring</h3>
-                        <p>Fleet-wide valve and actuator health dashboard tracking stiction, reversal counts, and cumulative travel distance over time. Flags degradation early with severity tiers and threshold bands, and launches per-actuator trend analysis directly from the sticky fleet table so maintenance can move from a fleet view into a specific asset in one click.</p>
-                        <div class="project-tags">
-                            <span class="tag">Valve Diagnostics</span>
-                            <span class="tag">Stiction Analysis</span>
-                            <span class="tag">Predictive Maintenance</span>
-                            <span class="tag">Web Reports</span>
-                        </div>
-                        <a href="https://slurix.github.io/actuator-health/" class="project-link" target="_blank" rel="noopener">
-                            Launch Live Demo <span aria-hidden="true">→</span>
-                        </a>
-                    </div>
-                </div>
+                <h3>Tooling &amp; Stack</h3>
+                <ul>
+                    <li>Historians, OPC UA / OPC DA</li>
+                    <li>Python, SQL, VB</li>
+                    <li>Windows Server, Linux, Docker</li>
+                    <li>Chart.js, custom web dashboards</li>
+                </ul>
             </div>
         </div>
-    </section>
 
-    <!-- Skills Progress Section -->
-    <section class="skills-section">
-        <div class="container">
-            <h2>Core Competencies</h2>
+        <div class="skills-bars">
+            <h3 class="skills-title">Core competencies</h3>
             <div class="skills-grid">
-                <div class="skill-bar">
-                    <div class="skill-info">
-                        <span class="skill-name">Advanced Process Control</span>
-                        <span class="skill-percent">96%</span>
-                    </div>
-                    <div class="skill-progress">
-                        <div class="skill-fill" data-percent="95" style="--fill-width:95%;--bar-delay:0.1s"></div>
-                    </div>
-                </div>
-                <div class="skill-bar">
-                    <div class="skill-info">
-                        <span class="skill-name">Data Science</span>
-                        <span class="skill-percent">90%</span>
-                    </div>
-                    <div class="skill-progress">
-                        <div class="skill-fill" data-percent="90" style="--fill-width:90%;--bar-delay:0.25s"></div>
-                    </div>
-                </div>
-                <div class="skill-bar">
-                    <div class="skill-info">
-                        <span class="skill-name">Project Leadership</span>
-                        <span class="skill-percent">88%</span>
-                    </div>
-                    <div class="skill-progress">
-                        <div class="skill-fill" data-percent="88" style="--fill-width:88%;--bar-delay:0.4s"></div>
-                    </div>
-                </div>
-                <div class="skill-bar">
-                    <div class="skill-info">
-                        <span class="skill-name">Sales/Marketing</span>
-                        <span class="skill-percent">85%</span>
-                    </div>
-                    <div class="skill-progress">
-                        <div class="skill-fill" data-percent="85" style="--fill-width:85%;--bar-delay:0.55s"></div>
-                    </div>
-                </div>
-                <div class="skill-bar">
-                    <div class="skill-info">
-                        <span class="skill-name">Development</span>
-                        <span class="skill-percent">94%</span>
-                    </div>
-                    <div class="skill-progress">
-                        <div class="skill-fill" data-percent="94" style="--fill-width:94%;--bar-delay:0.7s"></div>
-                    </div>
-                </div>
-                <div class="skill-bar">
-                    <div class="skill-info">
-                        <span class="skill-name">Process Optimization</span>
-                        <span class="skill-percent">93%</span>
-                    </div>
-                    <div class="skill-progress">
-                        <div class="skill-fill" data-percent="93" style="--fill-width:93%;--bar-delay:0.85s"></div>
-                    </div>
-                </div>
+                <div class="skill"><div class="skill-head"><span>Advanced Process Control</span><span>96%</span></div><div class="bar"><span style="--w:96%"></span></div></div>
+                <div class="skill"><div class="skill-head"><span>Data Science</span><span>90%</span></div><div class="bar"><span style="--w:90%"></span></div></div>
+                <div class="skill"><div class="skill-head"><span>Project Leadership</span><span>88%</span></div><div class="bar"><span style="--w:88%"></span></div></div>
+                <div class="skill"><div class="skill-head"><span>Development</span><span>94%</span></div><div class="bar"><span style="--w:94%"></span></div></div>
+                <div class="skill"><div class="skill-head"><span>Process Optimization</span><span>93%</span></div><div class="bar"><span style="--w:93%"></span></div></div>
+                <div class="skill"><div class="skill-head"><span>Sales / Marketing</span><span>85%</span></div><div class="bar"><span style="--w:85%"></span></div></div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-number">04</span>
-                <h2>Let's Connect</h2>
-            </div>
-            <div class="contact-content">
-                <div class="contact-text">
-                    <p class="lead">I'm interested in opportunities in process control engineering, MPC implementation, and control systems development.</p>
-                    <div class="contact-links">
-                        <a href="https://www.linkedin.com/in/nathaniel-normandeau-715345283/" class="contact-link">
-                            <span class="link-icon">💼</span>
-                            <span class="link-text">linkedin.com/in/nathaniel-normandeau</span>
-                        </a>
-                        <a href="https://github.com/Slurix" class="contact-link">
-                            <span class="link-icon">💻</span>
-                            <span class="link-text">github.com/Slurix</span>
-                        </a>
-                    </div>
-                </div>
-                <div class="contact-form">
-                    <form id="contactForm" action="https://formspree.io/f/mnjbjqvj" method="POST">
-                        <div class="form-group">
-                            <input type="text" id="name" name="name" placeholder="Your Name" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" id="email" name="email" placeholder="Your Email" required>
-                        </div>
-                        <div class="form-group">
-                            <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Send Message</button>
-                    </form>
+<!-- CONTACT -->
+<section id="contact" class="contact">
+    <div class="container">
+        <header class="section-header">
+            <span class="section-num">05</span>
+            <h2>Let's Connect</h2>
+            <p class="section-sub">I'm interested in opportunities in process control engineering, MPC implementation, and control systems development.</p>
+        </header>
+
+        <div class="contact-grid">
+            <div class="contact-links">
+                <a href="https://www.linkedin.com/in/nathaniel-normandeau-715345283/" target="_blank" rel="noopener" class="contact-link">
+                    <span class="cl-label">LinkedIn</span>
+                    <span class="cl-value">linkedin.com/in/nathaniel-normandeau</span>
+                    <span class="cl-arrow" aria-hidden="true">↗</span>
+                </a>
+                <a href="https://github.com/Slurix" target="_blank" rel="noopener" class="contact-link">
+                    <span class="cl-label">GitHub</span>
+                    <span class="cl-value">github.com/Slurix</span>
+                    <span class="cl-arrow" aria-hidden="true">↗</span>
+                </a>
+                <div class="contact-link contact-link-static">
+                    <span class="cl-label">Also</span>
+                    <span class="cl-value">Use the form — I read every message.</span>
+                    <span class="cl-arrow" aria-hidden="true">→</span>
                 </div>
             </div>
+
+            <form id="contactForm" class="contact-form" action="https://formspree.io/f/mnjbjqvj" method="POST">
+                <div class="form-group">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" id="name" name="name" required autocomplete="name">
+                </div>
+                <div class="form-group">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" id="email" name="email" required autocomplete="email">
+                </div>
+                <div class="form-group">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">
+                    <span>Send message</span>
+                    <span class="arrow" aria-hidden="true">→</span>
+                </button>
+            </form>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-left">
-                    <p>&copy; 2026 Nathaniel Normandeau. All rights reserved.</p>
-                </div>
-                <div class="footer-right">
-                    <p>Chemical Engineer | Process Control
+</main>
+
+<footer class="footer">
+    <div class="container footer-inner">
+        <div class="footer-brand">
+            <span class="brand-glyph" aria-hidden="true"></span>
+            <span>Nathaniel Normandeau</span>
+        </div>
+        <div class="footer-meta">
+            <span>© <span id="yr">2026</span> — Chemical Engineer · Process Control · Pulp &amp; Paper</span>
+        </div>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
