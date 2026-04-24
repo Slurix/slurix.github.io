@@ -9,7 +9,7 @@ Professional portfolio website showcasing my expertise in advanced process contr
 Chemical Engineer specializing in Advanced Process Control (APC) implementation across multiple process areas including:
 - Bleach Plant Optimization
 - Oxygen Delignification Systems
-- Recovery Boiler Operations
+- Power Boiler Operations
 - Lime Kiln Process Control
 
 I lead the development of innovative control loop monitoring and optimization software, including mode tracking systems, web-based reporting solutions, and custom APIs for real-time performance insights.
@@ -24,7 +24,7 @@ I lead the development of innovative control loop monitoring and optimization so
 ### Process Control Implementation
 - **Bleach Plant APC** - Multi-variable control for ECF bleaching operations
 - **O₂ Delignification Control** - Advanced control strategies for oxygen delignification
-- **Recovery Boiler APC** - Model predictive control for recovery boiler operations
+- **Power Boiler APC** - Model predictive control for power boiler operations
 - **Lime Kiln Control** - Temperature and quality optimization for lime kilns
 
 ## Technical Stack
